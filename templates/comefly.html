@@ -10,7 +10,7 @@
         </div>
     {% endif %}
       <h1>Get onboard!</h1>
-      <form action="{{ url_for('fly_status') }}" method="POST">
+      <form action="{{ url_for('flystatus.fly_status') }}" method="POST">
         <label for="name">Name:</label>
           <input type="text" id="name" name="name" value="{{ name }}"><br>
           <label for="age">Age:</label>
@@ -37,13 +37,13 @@
           <input type="number" id="weight" name="weight" value="{{ weight }}" min="40" required><br>
 
           <label>Region:</label>
-          <input type="radio" id="Africa" name="region" value="{{ region }}">
+          <input type="radio" id="Africa" name="region" value="Africa">
           <label for="Africa">Africa</label>
 
-          <input type="radio" id="America" name="region" value="{{ region }}">
+          <input type="radio" id="America" name="region" value="America">
           <label for="America">America</label>
 
-          <input type="radio" id="Europe" name="region" value="{{ region }}">
+          <input type="radio" id="Europe" name="region" value="Europe">
           <label for="Europe">Europe</label><br>
           <input type="submit" value="Submit">
       </form>

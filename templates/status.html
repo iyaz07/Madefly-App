@@ -7,10 +7,11 @@
     <h1>Know your status!</h1>
     <p>Hello, {{ name }}!</p>
     <p>Your BMI is {{ bmi }} and you are {{ category }}.</p>
-    <form action="{{ url_for('go_fly', name=name) }}" method="GET">
+    <form action="{{ url_for('gofly.go_fly', name=name) }}" method="GET">
         <input type="checkbox" id="agreeCheckbox" onchange="enableButton()"> I agree to get a meal plan and workout activities<br>
         <button type="submit" id="submitButton" disabled>Go fly</button>
     </form>
+
 
     <script>
         function enableButton() {
