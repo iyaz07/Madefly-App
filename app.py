@@ -8,6 +8,7 @@ from routes.home import home_bp
 from routes.comefly import comefly
 from routes.gofly import gofly
 from routes.flystatus import flystatus
+from routes.about import about
 
 
 app = Flask(__name__)
@@ -23,6 +24,7 @@ app.register_blueprint(home_bp)
 app.register_blueprint(comefly)
 app.register_blueprint(flystatus)
 app.register_blueprint(gofly)
+app.register_blueprint(about)
 
 if __name__ == '__main__':
     app.run(debug=True)
