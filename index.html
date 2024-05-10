@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block title %}
+   Landing page
+{% endblock %}
+{% block content %}
+    <h1>Madefly</h1>
+    <div class="images">
+        <img id="homejpeg" src="{{url_for('static', filename='images/spreaad.jpeg') }}">
+        <img id="homejpeg" src="{{url_for('static', filename='images/387e8a6b2ee43be0c07796b29d52ffca.png') }}">
+        <img id="homejpeg" src="{{url_for('static', filename='images/spread2.jpeg') }}">
+    </div>
+    <p>You can do amazing stuff when you know you can fly</p>
+    </br>
+    <hr/>
+    </br>
+    <div class="d-grid gap-2 col-6 mx-auto">
+        <a href="{{ url_for('home.home') }}" class="btn btn-secondary" role="button">Join us</a>
+    </div>
+
+{% endblock %}
